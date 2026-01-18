@@ -1,5 +1,5 @@
 fastapi
 uvicorn
 python-multipart
-PyPDF2
+pdfplumber
 openai==0.28.1
