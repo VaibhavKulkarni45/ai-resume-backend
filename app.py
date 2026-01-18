@@ -78,6 +78,7 @@ Give:
     return response["choices"][0]["message"]["content"]
 
 
+
 # ================= API =================
 @app.post("/analyze")
 async def analyze_resume(
