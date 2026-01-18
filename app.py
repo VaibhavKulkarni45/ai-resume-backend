@@ -54,28 +54,8 @@ def calculate_ats_score(resume_text, jd_text):
 
 
 def ai_analysis(resume_text, jd_text):
-    prompt = f"""
-You are an ATS resume analyzer.
+    return "AI analysis temporarily disabled. Resume parsing and ATS logic are working correctly."
 
-Resume:
-{resume_text}
-
-Job Description:
-{jd_text}
-
-Give:
-1. ATS match percentage
-2. Missing skills
-3. Resume improvement suggestions
-4. Rewrite 2 resume bullet points professionally
-"""
-
-    response = openai.ChatCompletion.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}]
-    )
-
-    return response["choices"][0]["message"]["content"]
 
 
 
